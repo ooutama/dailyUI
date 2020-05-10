@@ -1,0 +1,11 @@
+@media(min-width: 992px)
+{
+	.features .cards{
+		flex-direction: row;
+	}
+
+	.features .cards > .feature{
+		width: 25%;
+		margin-bottom: 0;
+	}
+}

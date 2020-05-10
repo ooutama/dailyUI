@@ -1,0 +1,144 @@
+/*------------------------------------------------------------------
+ * 
+ * Feature Cards stylesheet
+ * 
+ * @author OUTAMA Othmane
+ * @license MIT
+ * @version 1.0
+-------------------------------------------------------------------*/
+
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: 1rem;
+	font-family: 'Muli', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 400;
+	padding: 0;
+	margin: 0; 
+	line-height: 1.5;
+	color: #10182F;
+	background-color: #F7F8FC;
+}
+
+#app {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5rem 0;
+}
+
+.title{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.title > h1{
+	font-weight: 700;
+    font-size: 2.125rem;
+    margin-bottom: 0.3125rem;
+}
+.title > p{
+	color: #545D7A;
+	font-size: 1.125rem;
+}
+
+.features {
+
+}
+.features .cards{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.features .cards > .feature{
+	position: relative;
+	width: 100%;
+    padding: 3.125rem 1.875rem;
+    padding-bottom: 5.625rem;
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
+	background-color: #fff;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+.features .cards > .feature:hover{
+	box-shadow: 0 0 2.8125rem 0 rgba(0, 29, 147, 0.15);
+    transition: all 0.5s ease-in-out;
+}
+.features .cards > .feature > .icon{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.features .cards > .feature > .icon > .shape{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.5625rem;
+    height: 6.5625rem;
+    border-radius: 4.6875rem 3.125rem 3.125rem 3.125rem;
+    background-color: #FFF2F2;
+    color: #E55D5D;
+}
+.features .cards > .feature > .icon > .shape > svg {
+	width: 1.875rem;
+	height: auto;
+	fill: currentColor;
+}
+.features .cards > .feature > .details{
+	margin-top: 2rem;
+	text-align: center;
+}
+.features .cards > .feature > .details > h3{
+	font-size: 1.125rem;
+	font-weight: 700;
+	margin-bottom: 0.625rem;
+}
+.features .cards > .feature > .details > p{
+	font-size: 1rem;
+}
+
+.features .cards > .feature:nth-child(1) > .icon > .shape{
+	background-color: #F3F7FF;
+    color: #306BF3;
+}
+
+.features .cards > .feature:nth-child(2) > .icon > .shape{
+	background-color: #F9F3FF;
+    color: #D958D0;
+}
+
+.features .cards > .feature:nth-child(4) > .icon > .shape{
+	background-color: #E9FBF2;
+    color: #43A779;
+}
+
+.features .cards + div {
+	width: 100%;
+	text-align: center;
+}
+
+.viewAll {
+	display: inline-block;
+	background-color: #10182F;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	outline: 0;
+}
+
+.viewAll:hover {
+	opacity: 0.8;
+	transition: all 0.2s ease-in-out
+}
