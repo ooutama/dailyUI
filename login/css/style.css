@@ -1,0 +1,268 @@
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: Muli, sans-serif;
+	font-weight: 400;
+	padding: 0;
+	margin: 0; 
+	line-height: 1.5;
+	color: #10182F;
+	background-color: #F7F8FC;
+}
+
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+#box {
+	position: relative;
+	width: 100%;
+	max-width: 1017px;
+	background-color: #F0F2FB;
+	border-radius: 5px;
+	padding: 25px 25px;
+}
+
+#login {
+	display: flex;
+	background-color: #fff;
+	width: 100%; 
+	border-radius: 5px;
+}
+
+.form, .features{
+	width: 100%;
+	flex-wrap: wrap;
+	padding: 100px 70px;
+		padding-bottom: 40px;
+}
+
+.features {
+	display: none;
+	border-left: solid 2px #DAE1F5;
+}
+
+.socialLogin {
+	margin-bottom: 10px;
+}
+
+.link {
+	position: relative; 
+	width: 100%;
+}
+.link > a{
+	display: flex;
+    align-items: center;
+    width: 100%;
+    border: solid 2px #DAE1F5;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.link > a > svg {
+	display: inline-block;
+	width: 20px;
+    height: 20px;
+}
+.link > a > span{
+	margin-left: 15px;
+	color: #545D7A;
+	font-weight: 700;
+}
+
+.link.google > a > span{
+	margin-top: -2px;
+	margin-top: -4px;
+}
+
+.link > a:hover{
+	background-color: rgba(218, 225, 245, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.formGroup {
+	margin-bottom: 20px;
+}
+
+.formGroup>label {
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.formGroup>input {
+	display: block;
+    width: 100%;
+    border: solid 1px #DAE1F5;
+    color: #545D7A;
+    border-radius: 5px;
+    padding: 9px 15px;
+    outline: 0;
+}
+.formGroup>input:focus{
+	box-shadow: 0px 0px 0px 3px rgba(48, 107, 243, 0.5);
+}
+.formGroup>input:focus, .formGroup>input:active{
+	border-color: #306BF3;
+	transition: all 0.2s ease-in-out;
+}
+
+.formGroup>input::placeholder{
+	color: #545D7A;
+}
+
+.rememberAndForgotLink {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.rememberCheckbox {
+	display: flex;
+    align-items: center;
+}
+
+#rememberMe {
+	display: none;
+}
+
+#rememberMe + label {
+    display: inline-block;
+	width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: solid 2px #545D7A;
+    border-radius: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#rememberMe:checked + label {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik01IDEyTDEwIDE3TDIwIDciIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==");
+	background-repeat: no-repeat;
+	/*background-position: 50% 50%;
+	background-size: cover;  */
+	background-position: 50% 50%;
+    background-size: 15px auto;
+	background-color: #10182F;
+	border-color: #10182F;
+}
+
+#rememberMe + label + span{
+	font-size: 14px;
+}
+
+.ForgotLink > a{
+	font-size: 14px;
+	color: #306BF3;
+}
+.ForgotLink > a:hover{
+	opacity: 0.8;
+	transition: all 0.2s ease-in-out
+}
+
+.loginButton {
+	display: block;
+	width: 100%;
+	background-color: #10182F;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	outline: 0;
+}
+
+.loginButton:hover {
+	opacity: 0.8;
+	transition: all 0.2s ease-in-out
+}
+
+.additionalLinks {
+	text-align: center; 
+	margin-top: 50px;
+}
+
+.additionalLinks>p{
+	font-size: 14px;
+}
+
+.additionalLinks > p a{
+	color: #306BF3
+}
+
+.separator {
+	padding: 10px 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.emailLogin {
+	margin-top: 10px;
+}
+
+.features > div{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+
+.feature > .icon {
+	margin-right: 20px;
+}
+
+.feature > .icon > span{
+	width: 20px;
+    height: 20px;
+}
+
+.feature > .icon > span > svg {
+	width: 20px;
+	height: 20px;
+}
+
+.feature > .titleDesc {
+	margin-top: -7px;
+}
+.feature > .titleDesc > h3 {
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.feature > .titleDesc > p{
+	line-height: 1.2;
+}
+
+@media(min-width: 992px)
+{
+	.features {
+		display: block;
+	}
+
+	.form, .features{
+		width: 50%;
+	}
+}
