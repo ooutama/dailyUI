@@ -1,12 +1,12 @@
-# Login
+# Settings
 
-A simple Login page build with html & css
+A simple card
 
 ## Screenshoot
-![png](https://i.imgur.com/yfxO7on.png)
+![png](https://i.imgur.com/BHxXmin.png)
 
 ## Live example
-[Click here :)](https://outama-othmane.github.io/dailyUI/login/)
+[Click here :)](https://outama-othmane.github.io/dailyUI/Settings/)
 
 ## Source
 Thanks to [UI Design Daily](https://uidesigndaily.com/) for the design <3.
