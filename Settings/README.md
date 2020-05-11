@@ -3,7 +3,7 @@
 A simple card
 
 ## Screenshoot
-![png](https://i.imgur.com/BHxXmin.png)
+![png](https://i.imgur.com/Oh4Qwh7.png)
 
 ## Live example
 [Click here :)](https://outama-othmane.github.io/dailyUI/Settings/)
