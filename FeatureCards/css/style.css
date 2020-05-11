@@ -71,7 +71,7 @@ body {
 
 .features .cards > .feature:hover{
 	box-shadow: 0 0 2.8125rem 0 rgba(0, 29, 147, 0.15);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .features .cards > .feature > .icon{
 	width: 100%;
