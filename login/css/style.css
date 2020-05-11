@@ -130,6 +130,12 @@ body {
 	color: #545D7A;
 }
 
+.formGroup>input + .invalid{
+	    color: #DF184A;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 .rememberAndForgotLink {
 	position: relative;
 	display: flex;

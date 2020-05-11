@@ -28,10 +28,13 @@
 						<span>or</span>
 					</div>
 					<div class="emailLogin">
-						<form action="#" method="POST">
+						<form action="#" name="login" method="POST">
 							<div class="formGroup">
 								<label for="email">Email</label>
 								<input type="text" id="email" placeholder="Enter your email" />
+								<div class="invalid">
+									Please provide a valid email address
+								</div>
 							</div>
 							<div class="formGroup">
 								<label for="password">Password</label>
@@ -120,5 +123,10 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		window.onload = function () {
+			document.login.email.focus();
+		};
+	</script>
 </body>
 </html>
