@@ -153,9 +153,16 @@ body {
 #rememberMe {
 	display: none;
 }
+#rememberMe + label{
+	display: flex;
+    align-items: center;
+    vertical-align: middle;
+    /*font-size: 18px;*/
+    font-size: 14px; 
+}
 
-#rememberMe + label {
-    display: inline-block;
+#rememberMe + label::before {
+	content: "";
 	width: 20px;
     height: 20px;
     margin-right: 10px;
@@ -165,7 +172,7 @@ body {
     cursor: pointer;
 }
 
-#rememberMe:checked + label {
+#rememberMe:checked + label::before {
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik01IDEyTDEwIDE3TDIwIDciIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4NCg==");
 	background-repeat: no-repeat;
 	/*background-position: 50% 50%;
@@ -174,10 +181,6 @@ body {
     background-size: 15px auto;
 	background-color: #10182F;
 	border-color: #10182F;
-}
-
-#rememberMe + label + span{
-	font-size: 14px;
 }
 
 .ForgotLink > a{
